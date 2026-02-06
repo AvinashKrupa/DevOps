@@ -1,6 +1,8 @@
 ### Use official Nginx image
 FROM nginx:alpine
 
+RUN apt-get update
+
 # Remove default nginx website
 RUN rm -rf /usr/share/nginx/html/*
 
